@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GalaMix Thomaz Turbano</title>
+  <style>
+    :root { --maxw: 1200px; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: #111;
+      background: #fff;
+      display: grid;
+      min-height: 100svh;
+      place-items: center;
+      padding: 24px;
+    }
+    main {
+      width: 100%;
+      max-width: var(--maxw);
+      display: grid;
+      gap: 16px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.5rem, 3.5vw + 0.5rem, 3rem);
+      line-height: 1.1;
+      font-weight: 700;
+    }
+    .hero {
+      width: 100%;
+      display: block;
+      height: auto;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- TROQUE a headline abaixo -->
+    <h1>COMPRE AGORA GALATUL</h1>
+
+    <!-- IMAGEM RESPONSIVA -->
+    <!-- Troque os caminhos dos arquivos e, se possível, preencha width/height reais -->
+    <picture>
+      <!-- Versão DESKTOP (carrega em telas a partir de 768px) -->
+      <source
+        srcset="thomazgay.webp"
+        media="(min-width: 768px)"
+        width="1600" height="900" />
+      <!-- Versão MOBILE (fallback) -->
+      <img
+        src="thomazgay.webp"
+        alt="Descrição breve e acessível da sua imagem"
+        class="hero"
+        width="900" height="1600"
+        decoding="async" />
+     <h3>VENDEDOR: <span style="color:red; font-weight:bold;">Thomaz Turbano Hitlher</span></h3>
+    </picture>
+  </main>
+</body>
+</html>
